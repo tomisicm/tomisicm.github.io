@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Responsive resume cv</title>
+</head>
+
+<body>
+  <!-- <body class="scale-cv"> -->
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">Tomišić</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">
+              <i class="bx bx-home nav__icon"></i> Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#profile" class="nav__link">
+              <i class="bx bx-user nav__icon"></i> Profile
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <i class="bx bx-book nav__icon"></i> Education
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="bx bx-receipt nav__icon"></i> Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class="bx bx-briefcase-alt nav__icon"></i> Experience
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#certificate" class="nav__link">
+              <i class="bx bx-award nav__icon"></i> Certificate
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#references" class="nav__link">
+              <i class="bx bx-link-external"></i> References
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-grid-alt"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main bd-container">
+    <!-- All elements within this div, is generated in PDF -->
+    <div class="resume" id="area-cv">
+      <div class="resume__left">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home__container section bd-grid">
+            <div class="home__data bd-grid">
+              <!-- <img src="assets/img/profile.jpg" alt="" class="home__img" /> -->
+
+              <h1 class="home__title">Tomišić Mihailo</h1>
+              <h3 class="home__profession">Software Engineer</h3>
+
+              <div class="home__address bd-grid">
+                <div class="home__information">
+                  <i class="bx bx-map home__icon"></i>
+                  <span>Novi Sad, Serbia</span>
+                </div>
+                <div class="home__information">
+                  <i class="bx bx-envelope home__icon"></i>
+                  <span>mihailo.tomisic@gmail.com</span>
+                </div>
+                <!-- <div class="home__information">
+                  <i class="bx bx-phone home__icon"></i>
+                  <span>+381 62 704 626</span>
+                </div> -->
+
+                <i class="bx bx-download generate-pdf home__icon" title="Generate PDF" id="resume-button"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- theme change button -->
+          <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+        </section>
+
+        <!--========== SOCIAL ==========-->
+        <section class="social section">
+          <h2 class="section-title">Networks</h2>
+
+          <div class="social__container bd-grid">
+            <a href="https://www.linkedin.com/in/mihailo-tomisic-a21900141/" class="social__link" target="_blank">
+              <i class="bx bxl-linkedin-square social__icon"></i>
+              Mihailo Tomišić
+            </a>
+          </div>
+
+          <div class="social__container bd-grid">
+            <a href="https://github.com/tomisicm" class="social__link" target="_blank">
+              <i class="bx bxl-github social__icon"></i>
+              tomisicm
+            </a>
+          </div>
+        </section>
+
+        <!--========== PROFILE ==========-->
+        <section class="profile section" id="profile">
+          <h2 class="section-title">Profile</h2>
+
+          <p class="profile__description">
+            I am a fullstack software engineer with a passion for developing innovative
+            programs that expedite the efficiency and effectiveness of
+            organizational success. Experienced in technology and adept at crafting dependable code.
+            I am also dedicated to bringing a high level of energy, motivation, and
+            professionalism.
+          </p>
+
+          <br />
+
+          <p class="profile__description">
+            Rather than striving to excel as a top performer in a specific technology,
+            I prioritize becoming the glue within the team, dedicated to facilitating the achievement of our shared
+            objectives.
+          </p>
+
+        </section>
+
+        <!--========== EDUCATION ==========-->
+        <section class="education section" id="education">
+          <h2 class="section-title">Education</h2>
+
+          <div class="education__container bd-grid">
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <span class="education__line"></span>
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">MASTERS OF APPLIED MATEMATICS - Financial mathematics</h3>
+                <span class="education__studies">Faculty of Sciences, University of Novi Sad</span>
+                <span class="education__year">2014 - 2017</span>
+              </div>
+            </div>
+
+            <div class="education__content">
+              <div class="education__time">
+                <span class="education__rounder"></span>
+                <!-- <span class="education__line"></span> -->
+              </div>
+
+              <div class="education__data bd-grid">
+                <h3 class="education__title">BACHELOR OF APPLIED MATHEMATICS</h3>
+                <span class="education__studies">Faculty of Sciences, University of Novi Sad</span>
+                <span class="education__year">2010 - 2014</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--========== LANGUAGES ==========-->
+        <section class="languages section">
+          <h2 class="section-title">Languages</h2>
+
+          <div class="languages__container bd-grid">
+            <ul class="languages__content">
+              <li class="languages__name">
+                <span class="languages__circle"></span>English
+              </li>
+          </div>
+          </ul>
+        </section>
+      </div>
+
+      <div class="resume__right">
+        <!--========== EXPERIENCE ==========-->
+        <section class="experience section" id="experience">
+          <h2 class="section-title">Experience</h2>
+
+          <div class="experience__container bd-grid">
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Senior Software Engineer [AstraZeneca]</h3>
+                <div class="experience__wrapper">
+                  <span class="experience__company">EPAM Systems</span>
+                  <span class="experience__year">06/2022 ~ Today</span>
+                </div>
+                <span class="experience__description">
+                  Bootstrapped and developed two mid-sized projects from scrach, implementing features
+                  and providing support throughout the production release process.
+                </span>
+                <span class="experience__tech">
+                  Tech: React, NextJs, Express, Docker, AWS, PostgreSQL, Redshift, Azure SSO.
+                </span>
+
+                <span class="experience__description">
+                  Worked with the R&D team to developed scripts for automating the process of data extraction and
+                  transformation.
+                </span>
+                <span class="experience__tech">
+                  Tech: Python, Snowflake, Redshift
+                </span>
+
+                <span class="experience__description">
+                  Currently assisting AI teams in upgrading project frontends.
+                </span>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <span class="experience__line"></span>
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Senior Software Engineer [Optum]</h3>
+                <div class="experience__wrapper">
+                  <span class="experience__company">Vertrical</span>
+                  <span class="experience__year">10/2021 ~ 06/2022</span>
+                </div>
+                <span class="experience__description">Building scalable and compliant digital medical services using
+                  NestJS (microservices), React, Netlify and GCP. Delivering quality code by applying the best
+                  development practices. Allocating
+                  effort into differentiating critical components and providing sufficient test coverage of the most
+                  critical parts of implementation.
+                  Contribute to comprehensive documentation that supports the
+                  development and system support lifecycles.</span>
+                <span class="experience__tech">
+                  Tech: NestJs, microservices, React, GatsbyJs, Docker, PostgreSQL, ES, RabbitMQ
+                </span>
+              </div>
+            </div>
+
+            <div class="experience__content">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <!-- <span class="experience__line"></span> -->
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Fullstack Software Engineer</h3>
+                <div class="experience__wrapper">
+                  <span class="experience__company">BeeIT</span>
+                  <span class="experience__year">2019 ~ 09/2021</span>
+                </div>
+                <span class="experience__description">
+                  Developing e-commerce PWAs utilizing Magento 2 and ecosystem around it.
+                  Customizing existing and upgrading Magento 2 code bases, incorporating third-party services.
+                  Mentoring several junior developers throughout the project lifecycles.
+                </span>
+                <span class="experience__tech">
+                  Tech: Magento 2, VueStorefront, React, Express, Docker, MySQL, ES
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--========== SKILLS  ==========-->
+        <section class="skills section" id="skills">
+          <h2 class="section-title">Skills</h2>
+
+          <div class="skills__content bd-grid">
+            <ul class="skills__data">
+              <li class="skills__name">
+                <i class="bx bxl-nodejs skills__icon"></i>Node
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Redis, TypeScript, JavaScript
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Redis, Vue, React
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> RedisNextJs, NestJs
+              </li>
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <i class="bx bxl-python skills__icon"></i>Python
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Automation
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> Scrapping, Data Analysis
+              </li>
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <i class="bx bx-data skills__icon"></i>Databases
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> MySql, PostgreSQL
+              </li>
+              <li class="skills__name">
+                <span class="skills__circle"></span> MongoDB, ES, Redis
+              </li>
+            </ul>
+
+            <ul class="skills__data">
+              <li class="skills__name">
+                <i class="bx bxl-docker skills__icon"></i>Docker
+              </li>
+              <li class="skills__name">
+                <i class="bx bxl-google-cloud skills__icon"></i>AWS
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ========== CERTIFICATES ========== -->
+        <!-- <section class="certificate section" id="certificate">
+          <h2 class="section-title">Certificates</h2>
+
+          <div class="certificate__container bd-grid">
+            <div class="certificate__content">
+
+              <div class="certificate__data bd-grid">
+                <h3 class="certificate__title">AWS Certified Solutions Architect - Associate</h3>
+                <p class="certificate__description">Amazon Web Services</p>
+              </div>
+
+              <div class="certificate__data bd-grid">
+                <h3 class="certificate__title">AWS Certified Solutions Architect - Associate</h3>
+                <p class="certificate__description">Amazon Web Services</p>
+              </div>
+            </div>
+        </section> -->
+
+        <!--========== REFERENCES ==========-->
+        <!-- <section class="references section" id="references">
+          <h2 class="section-title">References</h2>
+
+          <div class="references__container bd-grid">
+            <div class="references__content bd-grid">
+              <span class="references__subtitle">Sr. Director</span>
+              <h3 class="references__title">John Doe</h3>
+              <span class="references__contact">user@gmail.com</span>
+            </div>
+          </div>
+        </section> -->
+
+
+
+        <!-- ========== INTERESTS ========== -->
+        <!-- <section class="interests section">
+          <h2 class="section-title">Interests</h2>
+
+          <div class="interests__container bd-grid">
+            <ul class="interests__content">
+              <li class="interests__name">
+                <span class="interests__circle"></span>Reading
+              </li>
+              <li class="interests__name">
+                <span class="interests__circle"></span>Travel
+              </li>
+              <li class="interests__name">
+                <span class="interests__circle"></span>Music
+              </li>
+            </ul>
+        </section> -->
+      </div>
+    </div>
+  </main>
+
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+  </a>
+
+  <!--========== HTML2PDF ==========-->
+  <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/generate-pdf.js"></script>
+</body>
+
+</html>
