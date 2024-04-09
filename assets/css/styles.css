@@ -126,10 +126,10 @@ body.scale-cv {
   min-height: 1120.28125px; /* this was needed in order to cover the whole a4 page */
 }
 
-.scale-cv .home__img {
+/* .scale-cv .home__img {
   width: 90px;
   height: 90px;
-}
+} */
 
 .scale-cv .home__container {
   gap: 1.5rem;
