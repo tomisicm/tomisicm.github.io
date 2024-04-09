@@ -103,7 +103,8 @@ body.scale-cv {
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme, 
-.scale-cv .generate-pdf {
+.scale-cv .generate-pdf,
+.scale-cv .home__img {
   display: none;
 }
 
@@ -698,4 +699,84 @@ img {
   
 }
 
-/* Classes modified for large screen size */
+
+.float-icon {
+  display: inline-block;
+  animation: float 3s linear infinite; 
+}
+
+@keyframes float {
+	0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.wave-icon-v1 {
+  display: inline-block;
+  animation: wave-1 10s linear infinite;
+}
+
+.wave-icon-v2 {
+  display: inline-block;
+  animation: wave-2 10s linear infinite;
+}
+
+@keyframes wave-1 {
+  0%, 100% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  6.25%, 93.75% {
+    transform: translateY(-8%) translateX(1px) rotate(3deg);
+  }
+  12.5%, 87.5% {
+    transform: translateY(-5%) translateX(2px) rotate(4deg);
+  }
+  18.75%, 81.25% {
+    transform: translateY(-13%) translateX(1px) rotate(3deg);
+  }
+  25%, 75% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  31.25%, 68.75% {
+    transform: translateY(13%) translateX(-1px) rotate(-3deg);
+  }
+  37.5%, 62.5% {
+    transform: translateY(5%) translateX(-2px) rotate(-4deg);
+  }
+  43.75%, 56.25% {
+    transform: translateY(13%) translateX(-1px) rotate(-3deg);
+  }
+}
+
+@keyframes wave-2 {
+  0%, 100% {
+    transform: translateY(-3%) translateX(2px) rotate(0deg);
+  }
+  6.25%, 93.75% {
+    transform: translateY(-5%) translateX(2px) rotate(-4deg);
+  }
+  12.5%, 87.5% {
+    transform: translateY(-8%) translateX(1px) rotate(3deg);
+  }
+  18.75%, 81.25% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  25%, 75% {
+    transform: translateY(-13%) translateX(1px) rotate(3deg);
+  }
+  31.25%, 68.75% {
+    transform: translateY(5%) translateX(-2px) rotate(-4deg);
+  }
+  37.5%, 62.5% {
+    transform: translateY(13%) translateX(-1px) rotate(-3deg);
+  }
+  43.75%, 56.25% {
+    transform: translateY(13%) translateX(-1px) rotate(-3deg);
+  }
+}
