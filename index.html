@@ -75,7 +75,7 @@
         <section class="home" id="home">
           <div class="home__container section bd-grid">
             <div class="home__data bd-grid">
-              <img src="assets/img/profile.jpg" alt="" class="home__img float-icon" />
+              <img src="assets/img/profile.jpg" alt="" class="home__img" />
 
               <h1 class="home__title">Tomišić Mihailo</h1>
               <h3 class="home__profession">Software Engineer</h3>
@@ -89,7 +89,7 @@
                   <i class="bx bx-envelope home__icon"></i>
                   <span>mihailo.tomisic@gmail.com</span>
                 </div>
-                <!-- <div class="home__information">
+                <!-- <div class="home__information phone__information">
                   <i class="bx bx-phone home__icon"></i>
                   <span>+381 62 704 626</span>
                 </div> -->
@@ -123,7 +123,7 @@
 
           <div class="social__container bd-grid">
             <a href="https://tomisicm.github.io/" class="social__link" target="_blank">
-              <i class='bx bxs-briefcase' ></i> 
+              <i class="bx bx-link-alt" ></i> 
               &nbsp tomisicm.github.io
             </a>
           </div>
@@ -266,7 +266,7 @@
             <div class="experience__content">
               <div class="experience__time">
                 <span class="experience__rounder"></span>
-                <!-- <span class="experience__line"></span> -->
+                <span class="experience__line conditionally-hide"></span>
               </div>
 
               <div class="experience__data bd-grid">
@@ -285,6 +285,35 @@
                 </span>
               </div>
             </div>
+
+            <div class="experience__content experience__additional conditionally-hide">
+              <div class="experience__time">
+                <span class="experience__rounder"></span>
+                <!-- <span class="experience__line"></span> -->
+              </div>
+
+              <div class="experience__data bd-grid">
+                <h3 class="experience__title">Quality Assurance and Automation Engineer</h3>
+                <div class="experience__wrapper">
+                  <span class="experience__company"></span>
+                  <span class="experience__year">2017 ~ 2019</span>
+                </div>
+                <span class="experience__description">
+                  Defined testing specifications and requirements by coordinating with technical staff. 
+                  Developed test case and performed analysis of test results. Maintained
+                  records of defects in defect tracking system. Provided corrective
+                  action plans as well as performed V root-cause analysis.
+                </span>
+                <span class="experience__description">
+                  Created and executed automated software test plans, cases, and
+                  scripts. Performed responsibilities of building test software to
+                  identify system component defects. 
+                </span>
+                <span class="experience__tech">
+                  Tech: TestRail, Java, Python, Selenium, Jira
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -298,13 +327,13 @@
                 <i class="bx bxl-nodejs skills__icon"></i>Node
               </li>
               <li class="skills__name">
-                <span class="skills__circle"></span> Redis, TypeScript, JavaScript
+                <span class="skills__circle"></span> TypeScript, JavaScript
               </li>
               <li class="skills__name">
-                <span class="skills__circle"></span> Redis, Vue, React
+                <span class="skills__circle"></span> Vue, React
               </li>
               <li class="skills__name">
-                <span class="skills__circle"></span> RedisNextJs, NestJs
+                <span class="skills__circle"></span> NextJs, NestJs, ExpressJs
               </li>
             </ul>
 
@@ -328,7 +357,7 @@
                 <span class="skills__circle"></span> MySql, PostgreSQL
               </li>
               <li class="skills__name">
-                <span class="skills__circle"></span> MongoDB, ES, Redis
+                <span class="skills__circle"></span> MongoDB, ElasticSearch, Redis
               </li>
             </ul>
 
@@ -374,8 +403,6 @@
             </div>
           </div>
         </section> -->
-
-
 
         <!-- ========== INTERESTS ========== -->
         <!-- <section class="interests section">

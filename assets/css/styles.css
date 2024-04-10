@@ -139,6 +139,10 @@ body.scale-cv {
   gap: 0.25rem;
 }
 
+.scale-cv .phone__information {
+  display: flex;
+}
+
 .scale-cv .home__address,
 .scale-cv .social__container {
   gap: .75rem;
@@ -189,6 +193,12 @@ body.scale-cv {
 .scale-cv .interests__container {
   column-gap: 2.5rem;
 }
+
+.scale-cv .conditionally-hide {
+  display: none;
+}
+
+
 
 /* here */
 
@@ -383,6 +393,10 @@ img {
   align-items: center;
   font-size: var(--small-font-size);
 }
+
+.phone__information { 
+  display: none;
+}  
 
 .home__icon {
   font-size: 1.2rem;
