@@ -489,7 +489,7 @@ img {
 
 .education__studies, .experience__company {
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--text-color);
   line-height: 12px;
 }
 
@@ -505,6 +505,10 @@ img {
 .education__year, .experience__year, .experience__tech {
   font-size: var(--small-font-size);
   line-height: var(--small-line-height);
+}
+
+.experience__tech {
+  margin-bottom: var(--mb-1);
 }
 
 .experience__description {
