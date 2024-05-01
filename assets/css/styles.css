@@ -1,5 +1,21 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*===== FONTS =====*/
+@font-face {
+  font-family: 'Geist';
+  src: url("../font/Geist-1.3.0/variable-woff/") format("woff");
+  font-weight: 500 900;
+  font-style: normal;
+}
+/*===== FONTS =====*/
+@font-face {
+  font-family: 'Geist Mono';
+  src: url("../font/GeistMono-1.3.0/variable-woff/") format("woff");
+  font-weight: 500 900;
+  font-style: normal;
+}
+
+/* TODO: https://vercel.com/font */
 
 /*===== VARIABLES CSS =====*/
 :root {
@@ -14,7 +30,9 @@
   --body-color: #fcfcfc;
 
   /*========== Font and typography ==========*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Geist Mono", monospace;
+  --body-font-alt: "Geist";
+  --pdf-font: "Poppins", sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -485,6 +503,7 @@ img {
 
 .education__title, .experience__title {
   font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
 }
 
 .education__studies, .experience__company {
@@ -509,6 +528,9 @@ img {
 
 .experience__tech {
   margin-bottom: var(--mb-1);
+  font-family: var(--body-font-alt);
+  font-weight: var(--font-semi-bold);
+  font-style: var(--font-semi-bold);
 }
 
 .experience__description {
